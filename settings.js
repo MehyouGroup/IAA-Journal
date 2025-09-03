@@ -8,7 +8,7 @@ source: "IAA Journal (Sep).pdf", //you can change the path and the name of your 
 
     hard: "hard", 
 
-	backgroundImage: "assets/phoenix.png", 
+	backgroundImage: "assets/snowy-winter-landscape.jpg", 
 	backgroundColor: "#fff",  
 
 	soundEnable: true, 
