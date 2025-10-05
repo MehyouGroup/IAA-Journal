@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>All IAA Journal Issues | Intercontinental Aviation Academy</title>
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --glass-bg:rgba(255,255,255,0.08);
+      --glass-border:rgba(255,255,255,0.22);
+      --topbar-bg:rgba(255,255,255,0.10);
+      --text-main:#fff; --text-muted:rgba(255,255,255,0.8);
+    }
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--text-main);
+      background:#0b0b0b url("assets/background.jpg") center/cover fixed no-repeat;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      position:relative;
+    }
+    body::before{
+      content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+      background: radial-gradient(1000px 600px at 50% 0%, rgba(0,0,0,0.25), transparent 60%),
+                  linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.55));
+    }
+    .topbar{
+      position:sticky; top:0; z-index:10;
+      background:var(--topbar-bg);
+      backdrop-filter:saturate(120%) blur(10px);
+      -webkit-backdrop-filter:saturate(120%) blur(10px);
+      border-bottom:1px solid var(--glass-border);
+      padding:12px 16px; display:flex; justify-content:space-between; align-items:center;
+    }
+    .topbar strong{font-family:'Montserrat',sans-serif; letter-spacing:.2px;}
+
+    .grid{
+      position:relative; z-index:1;
+      display:grid; gap:24px; grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+      padding:28px; max-width:1200px; margin:0 auto;
+    }
+
+    .card{
+      background:var(--glass-bg);
+      border:1px solid var(--glass-border);
+      border-radius:18px; padding:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+      backdrop-filter:blur(16px) saturate(120%); -webkit-backdrop-filter:blur(16px) saturate(120%);
+      transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover{ transform:translateY(-2px); box-shadow:0 16px 38px rgba(0,0,0,0.35); border-color:rgba(255,255,255,0.3); }
+    .card h3{ margin:0 0 10px; font-size:18px; line-height:1.35; font-family:'Montserrat',sans-serif; }
+    .card p{ margin:0 0 14px; color:var(--text-muted); font-size:14px; }
+
+    .pill{
+      display:inline-block; border:1px solid var(--glass-border); border-radius:999px;
+      padding:6px 12px; font-size:12px; color:var(--text-main); background:rgba(255,255,255,0.06);
+      backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    }
+
+    /* YOUR BRAND BUTTON */
+    .journal-cta{
+      background-color:#c80000;
+      color:#ffffff;
+      letter-spacing:0;
+      text-transform:uppercase;
+      width:auto;
+      height:auto;
+      padding:12px 25px;
+      font-size:15px;
+      line-height:100%;
+      text-decoration:none;
+      display:inline-block;
+      border-radius:50px;
+      font-family:'Montserrat', sans-serif;
+      border:none;
+    }
+    .journal-cta:hover{
+      background-color:#f1f1f1;
+      color:#464b50;
+    }
+
+    .topbar .journal-cta{ margin-left:auto; }
+
+    @media (max-width:520px){
+      .grid{padding:16px; gap:16px;}
+      .card{padding:16px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <strong>All IAA Journal Issues</strong>
+    <a class="journal-cta" href="index.html">Open latest</a>
+  </div>
+
+  <div class="grid" id="issues-grid"></div>
+
+  <script src="issues/issues.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      try {
+        if (!window.__IAA_JOURNAL__ || !Array.isArray(window.__IAA_JOURNAL__.ISSUES)) {
+          console.error("IAA journal registry not found.");
+          return;
+        }
+        var ISSUES = window.__IAA_JOURNAL__.ISSUES;
+        var grid = document.getElementById('issues-grid');
+        if (!grid) return;
+
+        ISSUES.forEach(function(i){
+          var el = document.createElement('div');
+          el.className = 'card';
+          el.innerHTML =
+              '<h3>' + i.title + '</h3>'
+            + '<p><span class="pill">' + i.date + '</span></p>'
+            + '<a class="journal-cta" href="index.html?issue=' + encodeURIComponent(i.slug) + '">Open issue</a>';
+          grid.appendChild(el);
+        });
+      } catch (e) { console.error(e); }
+    });
+  </script>
+</body>
+</html>
