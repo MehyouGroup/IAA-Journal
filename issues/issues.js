@@ -1,5 +1,23 @@
 // issues/issues.js
 const ISSUES = [
+  
+  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-11-01", outline: [
+    {"title":"Table of Contents","dest":2},
+    {"title":"Note from the Global Chairman","dest":3},
+    {"title":"Academy News & Milestones","dest":4},
+    {"title":"Student Spotlight","dest":11},
+    {"title":"Instructor Insights","dest":12},
+    {"title":"Flight Science & Innovation","dest":13},
+    {"title":"Industry Trends & Global Aviation Outlook","dest":15},
+    {"title":"Featured Article","dest":16},
+    {"title":"World Aviation News","dest":17},
+    {"title":"FlyIAA Course","dest":18},
+    {"title":"Frequently Asked Question","dest":21},
+    {"title":"Video Feature","dest":22},
+    {"title":"Upcoming Events & Programs","dest":23},
+    {"title":"Resources & Career Opportunities","dest":24},
+    {"title":"Quote of the Month","dest":25}
+] },
   { slug: "iaa-journal-oct-2025", title: "IAA Journal — October 2025", pdf: "issues/iaa-journal-oct-2025/IAA Journal (Oct).pdf", date: "2025-10-04", outline: [
     {"title":"Table of Contents","dest":2},
     {"title":"Note from the Global Chairman","dest":3},
@@ -34,23 +52,6 @@ const ISSUES = [
     {"title":"Resources & Career Opportunities","dest":22},
     {"title":"Quote of the Month","dest":23}
   ] },
-  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-11-01", outline: [
-    {"title":"Table of Contents","dest":2},
-    {"title":"Note from the Global Chairman","dest":3},
-    {"title":"Academy News & Milestones","dest":4},
-    {"title":"Student Spotlight","dest":11},
-    {"title":"Instructor Insights","dest":12},
-    {"title":"Flight Science & Innovation","dest":13},
-    {"title":"Industry Trends & Global Aviation Outlook","dest":15},
-    {"title":"Featured Article","dest":16},
-    {"title":"World Aviation News","dest":17},
-    {"title":"FlyIAA Course","dest":18},
-    {"title":"Frequently Asked Question","dest":21},
-    {"title":"Video Feature","dest":22},
-    {"title":"Upcoming Events & Programs","dest":23},
-    {"title":"Resources & Career Opportunities","dest":24},
-    {"title":"Quote of the Month","dest":25}
-] },
 
 ];
 function selectIssue(){ const params=new URLSearchParams(window.location.search); const slug=params.get('issue'); if(slug){ const m=ISSUES.find(i=>i.slug===slug); if(m) return m; } return ISSUES[0]; }
