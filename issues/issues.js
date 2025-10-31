@@ -1,7 +1,57 @@
 // issues/issues.js
 const ISSUES = [
-  { slug: "iaa-journal-oct-2025", title: "IAA Journal — October 2025", pdf: "issues/iaa-journal-oct-2025/IAA Journal (Oct).pdf", date: "2025-10-04", outline: [{"title":"Table of Contents","dest":2},{"title":"Note from the Global Chairman","dest":3},{"title":"Academy News & Milestones","dest":4},{"title":"Student Spotlight","dest":9},{"title":"Instructor Insights","dest":10},{"title":"Flight Science & Innovation","dest":11},{"title":"Industry Trends & Outlook","dest":12},{"title":"Featured Article","dest":13},{"title":"World Aviation News","dest":14},{"title":"FlyIAA Course","dest":15},{"title":"FAQ","dest":18},{"title":"Video Feature","dest":19},{"title":"Upcoming Events & Programs","dest":20},{"title":"Resources & Career Opportunities","dest":21},{"title":"Quote of the Month","dest":22}] },
-  { slug: "iaa-journal-sep-2025", title: "IAA Journal — September 2025", pdf: "issues/iaa-journal-sep-2025/IAA Journal (Sep).pdf", date: "2025-09-01", outline: [{"title":"Cover","dest":1},{"title":"Table of Contents","dest":2},{"title":"Note from the CEO – Captain Wissam Mehyou","dest":3},{"title":"Academy News & Milestones","dest":4},{"title":"Student Spotlight","dest":9},{"title":"Instructor Insights","dest":12},{"title":"Flight Science & Innovation","dest":13},{"title":"Industry Trends & Global Aviation Outlook","dest":14},{"title":"Featured Article – Building Your Career Path","dest":15},{"title":"FlyIAA Course – Type Rating Programs","dest":16},{"title":"Frequently Asked Questions","dest":18},{"title":"Video Feature","dest":20},{"title":"Upcoming Events & Programs","dest":21},{"title":"Resources & Career Opportunities","dest":22},{"title":"Quote of the Month","dest":23}] },
+  { slug: "iaa-journal-oct-2025", title: "IAA Journal — October 2025", pdf: "issues/iaa-journal-oct-2025/IAA Journal (Oct).pdf", date: "2025-10-04", outline: [
+    {"title":"Table of Contents","dest":2},
+    {"title":"Note from the Global Chairman","dest":3},
+    {"title":"Academy News & Milestones","dest":4},
+    {"title":"Student Spotlight","dest":9},
+    {"title":"Instructor Insights","dest":10},
+    {"title":"Flight Science & Innovation","dest":11},
+    {"title":"Industry Trends & Outlook","dest":12},
+    {"title":"Featured Article","dest":13},
+    {"title":"World Aviation News","dest":14},
+    {"title":"FlyIAA Course","dest":15},
+    {"title":"FAQ","dest":18},
+    {"title":"Video Feature","dest":19},
+    {"title":"Upcoming Events & Programs","dest":20},
+    {"title":"Resources & Career Opportunities","dest":21},
+    {"title":"Quote of the Month","dest":22}
+  ] },
+  { slug: "iaa-journal-sep-2025", title: "IAA Journal — September 2025", pdf: "issues/iaa-journal-sep-2025/IAA Journal (Sep).pdf", date: "2025-09-01", outline: [
+    {"title":"Cover","dest":1},
+    {"title":"Table of Contents","dest":2},
+    {"title":"Note from the CEO – Captain Wissam Mehyou","dest":3},
+    {"title":"Academy News & Milestones","dest":4},
+    {"title":"Student Spotlight","dest":9},
+    {"title":"Instructor Insights","dest":12},
+    {"title":"Flight Science & Innovation","dest":13},
+    {"title":"Industry Trends & Global Aviation Outlook","dest":14},
+    {"title":"Featured Article – Building Your Career Path","dest":15},
+    {"title":"FlyIAA Course – Type Rating Programs","dest":16},
+    {"title":"Frequently Asked Questions","dest":18},
+    {"title":"Video Feature","dest":20},
+    {"title":"Upcoming Events & Programs","dest":21},
+    {"title":"Resources & Career Opportunities","dest":22},
+    {"title":"Quote of the Month","dest":23}
+  ] },
+  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-10-31", outline: [
+    {"title":"Table of Contents","dest":2},
+    {"title":"Note from the Global Chairman","dest":3},
+    {"title":"Academy News & Milestones","dest":4},
+    {"title":"Student Spotlight","dest":11},
+    {"title":"Instructor Insights","dest":12},
+    {"title":"Flight Science & Innovation","dest":13},
+    {"title":"Industry Trends & Global Aviation Outlook","dest":15},
+    {"title":"Featured Article","dest":16},
+    {"title":"World Aviation News","dest":17},
+    {"title":"FlyIAA Course","dest":18},
+    {"title":"Frequently Asked Question","dest":21},
+    {"title":"Video Feature","dest":22},
+    {"title":"Upcoming Events & Programs","dest":23},
+    {"title":"Resources & Career Opportunities","dest":24},
+    {"title":"Quote of the Month","dest":25}
+] },
+
 ];
 function selectIssue(){ const params=new URLSearchParams(window.location.search); const slug=params.get('issue'); if(slug){ const m=ISSUES.find(i=>i.slug===slug); if(m) return m; } return ISSUES[0]; }
 window.__IAA_JOURNAL__ = { ISSUES, selectIssue };
