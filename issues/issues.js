@@ -1,7 +1,7 @@
 // issues/issues.js
 const ISSUES = [
   
-  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-11-01", outline: [
+  { slug: "iaa-journal-nov-2025", title: "FlyIAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-11-01", outline: [
     {"title":"Table of Contents","dest":2},
     {"title":"Note from the Global Chairman","dest":3},
     {"title":"Academy News & Milestones","dest":4},
@@ -18,7 +18,7 @@ const ISSUES = [
     {"title":"Resources & Career Opportunities","dest":24},
     {"title":"Quote of the Month","dest":25}
 ] },
-  { slug: "iaa-journal-oct-2025", title: "IAA Journal — October 2025", pdf: "issues/iaa-journal-oct-2025/IAA Journal (Oct).pdf", date: "2025-10-04", outline: [
+  { slug: "iaa-journal-oct-2025", title: "FlyIAA Journal — October 2025", pdf: "issues/iaa-journal-oct-2025/IAA Journal (Oct).pdf", date: "2025-10-04", outline: [
     {"title":"Table of Contents","dest":2},
     {"title":"Note from the Global Chairman","dest":3},
     {"title":"Academy News & Milestones","dest":4},
@@ -35,7 +35,7 @@ const ISSUES = [
     {"title":"Resources & Career Opportunities","dest":21},
     {"title":"Quote of the Month","dest":22}
   ] },
-  { slug: "iaa-journal-sep-2025", title: "IAA Journal — September 2025", pdf: "issues/iaa-journal-sep-2025/IAA Journal (Sep).pdf", date: "2025-09-01", outline: [
+  { slug: "iaa-journal-sep-2025", title: "FlyIAA Journal — September 2025", pdf: "issues/iaa-journal-sep-2025/IAA Journal (Sep).pdf", date: "2025-09-01", outline: [
     {"title":"Cover","dest":1},
     {"title":"Table of Contents","dest":2},
     {"title":"Note from the CEO – Captain Wissam Mehyou","dest":3},
