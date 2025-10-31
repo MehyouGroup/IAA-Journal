@@ -34,7 +34,7 @@ const ISSUES = [
     {"title":"Resources & Career Opportunities","dest":22},
     {"title":"Quote of the Month","dest":23}
   ] },
-  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-10-31", outline: [
+  { slug: "iaa-journal-nov-2025", title: "IAA Journal — November 2025", pdf: "issues/iaa-journal-nov-2025/IAA Journal (Nov).pdf", date: "2025-11-01", outline: [
     {"title":"Table of Contents","dest":2},
     {"title":"Note from the Global Chairman","dest":3},
     {"title":"Academy News & Milestones","dest":4},
