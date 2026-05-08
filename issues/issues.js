@@ -1,7 +1,7 @@
 // issues/issues.js
 const ISSUES = [
   {
-  slug: "iaa-journal-may-2026", title: "IAA Journal — May 2026", pdf: "issues/iaa-journal-may-2026/IAA Journal (May).pdf", date: "2026-05-01", outline: [
+  slug: "iaa-journal-may-2026", title: "IAA Journal — May 2026", pdf: "issues/iaa-journal-may-2026/IAA Journal (May).pdf", date: "2026-05-08", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman – Captain Wissam Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
