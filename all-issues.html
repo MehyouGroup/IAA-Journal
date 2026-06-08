@@ -116,7 +116,7 @@
           el.innerHTML =
               '<h3>' + i.title + '</h3>'
             + '<p><span class="pill">' + i.date + '</span></p>'
-            + '<a class="journal-cta" href="index.html?issue=' + encodeURIComponent(i.slug) + '">Open issue</a>';
+            + '<a class="journal-cta" href="' + i.slug + '.html">Open issue</a>';
           grid.appendChild(el);
         });
       } catch (e) { console.error(e); }
