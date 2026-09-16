@@ -1,6 +1,25 @@
 // issues/issues.js
 const ISSUES = [
   {
+  slug: "iaa-journal-sep-2026", title: "IAA Journal — September 2026", pdf: "issues/iaa-journal-sep-2026/IAA Journal (Sep).pdf", date: "2026-09-16", outline: [
+    { title: "Table of Contents", dest: 2 },
+    { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
+    { title: "Academy News & Milestones", dest: 4 },
+    { title: "Student Spotlight", dest: 7 },
+    { title: "Instructor Insights", dest: 10 },
+    { title: "Flight Science & Innovation", dest: 11 },
+    { title: "Industry Trends & Global Aviation Outlook", dest: 13 },
+    { title: "Featured Article", dest: 15 },
+    { title: "World Aviation News", dest: 17 },
+    { title: "FlyIAA Course", dest: 20 },
+    { title: "Frequently Asked Question", dest: 22 },
+    { title: "Video Feature", dest: 23 },
+    { title: "Upcoming Events & Programs", dest: 24 },
+    { title: "Resources & Career Opportunities", dest: 25 },
+    { title: "Quote of the Month", dest: 26 }
+  ]
+},
+  {
   slug: "iaa-journal-aug-2026", title: "IAA Journal — August 2026", pdf: "issues/iaa-journal-aug-2026/IAA Journal (Aug).pdf", date: "2026-08-13", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
