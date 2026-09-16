@@ -1,4 +1,4 @@
-// settings.js (IAA Journal)
+// settings.js (FlyIAA Journal)
 var selectedIssue = (window.__IAA_JOURNAL__ && window.__IAA_JOURNAL__.selectIssue())
   ? window.__IAA_JOURNAL__.selectIssue()
   : null;
@@ -6,7 +6,7 @@ var selectedIssue = (window.__IAA_JOURNAL__ && window.__IAA_JOURNAL__.selectIssu
 if (!selectedIssue) {
   selectedIssue = {
     slug: "placeholder",
-    title: "IAA Journal",
+    title: "FlyIAA Journal",
     pdf: "issues/placeholder.pdf",
     date: "2025-01-01",
     outline: [{ title: "Cover", dest: 1 }]
@@ -46,7 +46,7 @@ option_PDF1.outline = selectedIssue.outline || [];
 
 document.addEventListener("DOMContentLoaded", function () {
   try {
-    document.title = selectedIssue.title + " | IAA Journal";
+    document.title = selectedIssue.title + " | FlyIAA Journal";
     var h1 = document.querySelector("#iaa-journal-seo h1");
     if (h1) h1.textContent = selectedIssue.title;
   } catch (e) {}

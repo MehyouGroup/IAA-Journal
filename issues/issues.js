@@ -1,7 +1,7 @@
 // issues/issues.js
 const ISSUES = [
   {
-  slug: "iaa-journal-sep-2026", title: "IAA Journal — September 2026", pdf: "issues/iaa-journal-sep-2026/IAA Journal (Sep).pdf", date: "2026-09-16", outline: [
+  slug: "iaa-journal-sep-2026", title: "FlyIAA Journal — September 2026", pdf: "issues/iaa-journal-sep-2026/IAA Journal (Sep).pdf", date: "2026-09-16", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -20,7 +20,7 @@ const ISSUES = [
   ]
 },
   {
-  slug: "iaa-journal-aug-2026", title: "IAA Journal — August 2026", pdf: "issues/iaa-journal-aug-2026/IAA Journal (Aug).pdf", date: "2026-08-13", outline: [
+  slug: "iaa-journal-aug-2026", title: "FlyIAA Journal — August 2026", pdf: "issues/iaa-journal-aug-2026/IAA Journal (Aug).pdf", date: "2026-08-13", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -39,7 +39,7 @@ const ISSUES = [
   ]
 },
   {
-  slug: "iaa-journal-jul-2026", title: "IAA Journal — July 2026", pdf: "issues/iaa-journal-jul-2026/IAA Journal (Jul).pdf", date: "2026-07-09", outline: [
+  slug: "iaa-journal-jul-2026", title: "FlyIAA Journal — July 2026", pdf: "issues/iaa-journal-jul-2026/IAA Journal (Jul).pdf", date: "2026-07-09", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -58,7 +58,7 @@ const ISSUES = [
   ]
 },
   {
-  slug: "iaa-journal-jun-2026", title: "IAA Journal — June 2026", pdf: "issues/iaa-journal-jun-2026/IAA Journal (Jun).pdf", date: "2026-06-08", outline: [
+  slug: "iaa-journal-jun-2026", title: "FlyIAA Journal — June 2026", pdf: "issues/iaa-journal-jun-2026/IAA Journal (Jun).pdf", date: "2026-06-08", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman, Captain Wissam Al Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -77,7 +77,7 @@ const ISSUES = [
   ]
 },
   {
-  slug: "iaa-journal-may-2026", title: "IAA Journal — May 2026", pdf: "issues/iaa-journal-may-2026/IAA Journal (May).pdf", date: "2026-05-08", outline: [
+  slug: "iaa-journal-may-2026", title: "FlyIAA Journal — May 2026", pdf: "issues/iaa-journal-may-2026/IAA Journal (May).pdf", date: "2026-05-08", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman – Captain Wissam Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -96,7 +96,7 @@ const ISSUES = [
   ]
 },
   {
-  slug: "iaa-journal-mar-2026", title: "IAA Journal — March 2026", pdf: "issues/iaa-journal-mar-2026/IAA Journal (Mar).pdf", date: "2026-03-01", outline: [
+  slug: "iaa-journal-mar-2026", title: "FlyIAA Journal — March 2026", pdf: "issues/iaa-journal-mar-2026/IAA Journal (Mar).pdf", date: "2026-03-01", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman – Captain Wissam Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -114,7 +114,7 @@ const ISSUES = [
     { title: "Quote of the Month", dest: 24 }
   ]
 },
-  { slug: "iaa-journal-feb-2026", title: "IAA Journal — February 2026", pdf: "issues/iaa-journal-feb-2026/IAA Journal (Feb).pdf", date: "2026-02-01", outline: [
+  { slug: "iaa-journal-feb-2026", title: "FlyIAA Journal — February 2026", pdf: "issues/iaa-journal-feb-2026/IAA Journal (Feb).pdf", date: "2026-02-01", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman – Captain Wissam Mehyou", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -133,7 +133,7 @@ const ISSUES = [
   ]
 },
 
-  { slug: "iaa-journal-jan-2026", title: "IAA Journal — January 2026", pdf: "issues/iaa-journal-jan-2026/IAA Journal (Jan).pdf", date: "2026-01-01", outline: [
+  { slug: "iaa-journal-jan-2026", title: "FlyIAA Journal — January 2026", pdf: "issues/iaa-journal-jan-2026/IAA Journal (Jan).pdf", date: "2026-01-01", outline: [
     { title: "Table of Contents", dest: 2 },
     { title: "Note from the Global Chairman", dest: 3 },
     { title: "Academy News & Milestones", dest: 4 },
@@ -150,7 +150,7 @@ const ISSUES = [
     { title: "Resources & Career Opportunities", dest: 25 },
     { title: "Quote of the Month", dest: 26 }
   ] },
-  { slug: "iaa-journal-dec-2025", title: "IAA Journal — December 2025", pdf: "issues/iaa-journal-dec-2025/IAA Journal (Dec).pdf", date: "2025-12-01", outline: [
+  { slug: "iaa-journal-dec-2025", title: "FlyIAA Journal — December 2025", pdf: "issues/iaa-journal-dec-2025/IAA Journal (Dec).pdf", date: "2025-12-01", outline: [
   { title: "Table of Contents", dest: 2 },
   { title: "Note from the Global Chairman", dest: 3 },
   { title: "Academy News & Milestones", dest: 4 },
